@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <i class="fa-solid fa-bell corner-icon"></i>
+
+    <form action="https://www.google.com" method="get" class="form-box">
+        <h2>Contact Form</h2>
+
+        <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Leave your message here" required></textarea>
+        </div>
+
+        <div class="form-field">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" placeholder="Your age" required>
+        </div>
+
+        <div class="form-field">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="md">Moldova</option>
+                <option value="ro">Romania</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label for="interests">Interests (Hold Ctrl/Cmd to select multiple):</label>
+            <select id="interests" name="interests" multiple size="4">
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="art">Art</option>
+                <option value="music">Music</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <div class="form-field">
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>

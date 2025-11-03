@@ -1,0 +1,103 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+/* Main form container */
+.form-box {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for each field group (label + input) */
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label,
+.form-field p {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Style for inputs, textarea, and select */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding does not affect total width */
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing */
+}
+
+/* Style for radio and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Browser's validation style for invalid fields */
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border-color: #e53e3e; /* Highlight invalid fields with a red border */
+}
+/* ADD THIS NEW CODE TO THE END OF YOUR CSS FILE */
+
+/* Style for the corner icon */
+.corner-icon {
+    position: sticky; 
+    top: 25px;       
+    left: 25px;      
+    font-size: 28px; 
+    color: #555;     
+    cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.corner-icon:hover {
+    color: #007bff; 
+}

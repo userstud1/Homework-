@@ -1,0 +1,104 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f6;
+    color: #333;
+    line-height: 1.6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.card {
+    background: #ffffff;
+    max-width: 650px;
+    width: 90%;
+    padding: 3rem;
+    border-radius: 10px;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    animation: fadeInSlide 0.6s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #111;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 0.25rem 0 0 0;
+    color: #0056b3; 
+    font-size: 1.15rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+li {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #003d82;
+}
+
+section {
+    margin-top: 1.5rem;
+}
+
+.contact p {
+    margin: 0.25rem 0;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
