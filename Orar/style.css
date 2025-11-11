@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('/images/new_background_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: #666;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.left {
+    width: 40%;
+    max-width: 450px;
+}
+
+.header {
+    background-color: #25975A;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.header h4 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    background-color: #25975A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover,
+.btn.active {
+    background-color: white;
+    color: black;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.toggle p {
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    display: inline-block;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    background: white;
+    font-size: 16px;
+}
+
+.results {
+    background: white;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.list {
+    list-style: none;
+}
+
+.item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.item:hover {
+    background-color: #fbfbc0;
+    color: #5abb89;
+    font-weight: bold;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 3px 0px 9px 5px rgba(26, 25, 26, 0.3);
+}
+
+.table th,
+.table td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.table th {
+    background-color: #25975A;
+    color: white;
+    font-weight: normal;
+}
+
+.table .day {
+    background-color: #25975A;
+    color: white;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: white;
+}
+
+.legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.legenda p {
+    color: white;
+    font-size: 12px;
+    margin: 0;
+}
+
+.right {
+    flex: 1;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100px;
+    height: 70px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+.orar {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 3px 0px 9px 5px rgba(26, 25, 26, 0.3);
+}
+
+.time {
+    background-color: #25975A;
+    color: white;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.lesson {
+    background: white;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.lesson div {
+    min-height: 40px;
+}
+
+.lesson strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lesson p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
