@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header container */
+header {
+  position: fixed;        /* stays on top when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2c3e50;    /* dark background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Navigation links */
+nav {
+  display: flex;
+  justify-content: center; /* center all links horizontally */
+  flex-wrap: wrap;         /* wrap to next line if screen is narrow */
+  padding: 10px 0;
+  gap: 20px;               /* space between links */
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #3498db;    /* highlight on hover */
+  color: #fff;
+}
+
+/* Add padding so content isn't hidden behind the fixed header */
+main {
+  padding-top: 60px;
+}

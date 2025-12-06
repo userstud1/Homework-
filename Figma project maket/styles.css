@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #242323;
+    text-transform: uppercase;
+}
+
+nav button {
+    text-transform: uppercase;
+    background-color: #000000;
+    border-radius: 7px;
+    color: white;
+    padding: 13px 22px
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    align-items: center;
+}
+
+.first-section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F6F5;
+    border-radius: 59px;
+    padding: 80px 120px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 96px;
+}
+
+.description {
+    color: #191818;
+    font-size: 32px;
+}
+
+.first-section-container button {
+    background-color: #000000;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+.container {
+    margin: 56px 100px
+}
+
+.first-section-decoration {
+    position: relative;
+}
+
+.left-top {
+    position: absolute;
+    top: 68px;
+    left: 0px;
+}
+
+.right-top {
+    position: absolute;
+    top: 105px;
+    right: 100px;
+}
+
+.right-bottom {
+    position: absolute;
+    bottom: 90px;
+    right: 5px;
+}
+
+.left-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+}
+.logos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 186px;
+    background-color: #EBD96B;
+    border: none;
+    
+   
+    
+}
+.second-section {
+     background-color: #EBD96B;
+   border: none;
+   
+
+}
+/* --- New Arrivals Section Styling --- */
+
+.new-arrivals-section {
+    max-height: 967px;
+    max-width: 1638px; /* Controls the maximum width of the content */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 50px 20px;
+    font-family: sans-serif; 
+    margin-left: 104px;
+}
+
+.new-arrivals-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+/* --- Container for the three product items --- */
+.arrivals-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Space between the items */
+}
+
+/* --- Individual Product Item (The Link) --- */
+.arrival-item {
+    flex: 1 1 30%; /* Gives each item equal width, growing/shrinking as needed */
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s;
+}
+
+
+
+
+.image-placeholder {
+    max-width: 484px;
+    
+    padding-bottom: 133.33%; 
+    max-height: 704px; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    margin-bottom: 15px;
+    position: relative; 
+
+    background-color: #f0f0f0; 
+}
+
+
+.image-placeholder img {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+
+.category-title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 24;
+    color: #7F7F7F; 
+    gap: 20px;
+}
+
+.explore p {
+    margin: 0;
+}
+
+.arrow-icon {
+    font-size: 18px; 
+    line-height: 1;
+}
+.feedback {
+    height: 716px;
+    background-color:#E5C643;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+}
+.caps {
+    font-size: 55px;
+    font-weight: bold;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 30%;
+    text-align: center;
+}
+.feedback p {
+   font-size: 32px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.email-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 574px;
+  height: 105.99198150634766px;
+  padding: 0 10px;
+}
+
+.email-form input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #555;
+  padding: 0 10px;
+}
+
+.email-form button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 161px;
+  height: 81.6259994506836px;
+  font-size: 33px;
+
+}
+
+/* ----- Favourite Section ----- */
+.favourite {
+  padding: 100px 80px;
+  background: #fff;
+}
+
+.favourite h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.favourite-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1 1 45%;
+  
+  transition: transform 0.3s ease;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  color: #555;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+.brand h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.brand p {
+  max-width: 240px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.socials img {
+  width: 35px;
+  height: 35px;
+  background-color: #EBD96B;
+  border-radius: 6px;
+  padding: 8px;
+  
+}
+
+
